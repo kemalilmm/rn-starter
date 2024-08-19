@@ -18,6 +18,9 @@ const HomeScreen = ({ navigation }) => {
   function ColorScreenRedirect() {
     navigation.navigate("ColorScreen");
   }
+  function SquareScreenRedirect(){
+    navigation.navigate('Square')
+  }
   return (
     <View>
       <Text style={styles.text}>Hi There !</Text>
@@ -32,6 +35,10 @@ const HomeScreen = ({ navigation }) => {
         <Button
           title="Go To List Color Screen"
           onPress={ColorScreenRedirect}
+        />
+         <Button
+          title="Go To List Square Screen"
+          onPress={SquareScreenRedirect}
         />
       </View>
     </View>

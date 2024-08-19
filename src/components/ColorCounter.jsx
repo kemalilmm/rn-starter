@@ -1,0 +1,14 @@
+import react from "react";
+import { View,Text,Button } from "react-native";
+
+const ColorCounter = ({color}) => {
+    return (
+        <View>
+            <Text>{color}</Text>
+            <Button title={'Increase '+color}/>
+            <Button title={'Decrease '+color}/>
+        </View>
+    )
+}
+
+export default ColorCounter
