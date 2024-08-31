@@ -7,7 +7,7 @@ const reducer = (state,action) =>{
             return {...state,count:state.count+5}
         case 'decrement' :
             return (state.count-5 < 0)?state:{...state,count:state.count-5}
-        default : return;
+        default : return state;
     }
 }
 const CounterScreen = () => {
